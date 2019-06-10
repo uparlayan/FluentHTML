@@ -50,11 +50,11 @@ begin
               , br
               , label_( 'Şifreniz'        , [ br, input.placeholder('Lütfen 8 basamaklı bir şifre yazınız'  ).id('password_id').name('password').value('').type_('password').autocomplete('off') ])
               , br
-              , label_( 'Ad ve Soyadınız' , [ br, input.placeholder('Lütfen tam adınızı yazınız'            ).id('username_id').name('username').value('').type_('text').autocomplete('off') ])
+              , label_( 'Ad ve Soyadınız' , [ br, input.placeholder('Lütfen tam adınızı yazınız'            ).id('fullname_id').name('fullname').value('').type_('text').autocomplete('off') ])
               , br
-              , label_( 'Eposta Adresiniz', [ br, input.placeholder('Size ait Eposta adresinizi yazınız'    ).id('username_id').name('username').value('').type_('text').autocomplete('off') ])
+              , label_( 'Eposta Adresiniz', [ br, input.placeholder('Size ait Eposta adresinizi yazınız'    ).id('emailadr_id').name('emailadr').value('').type_('text').autocomplete('off') ])
               , br
-              , label_( 'Arabirim Dili'   , [ br, input.placeholder('Bu siteyi hangi dilde kullanacaksınız?').id('username_id').name('username').value('').type_('text').autocomplete('off') ])
+              , label_( 'Arabirim Dili'   , [ br, input.placeholder('Bu siteyi hangi dilde kullanacaksınız?').id('language_id').name('language').value('').type_('text').autocomplete('off') ])
               ]).action('/profileedit').method('post');
       aHTML:= table([
                       thead([
@@ -71,7 +71,6 @@ begin
                             , tr( [ td('Durum')         , td(Oturum.User.Durum)       ])
                             ])
                     ]).class_('vg');
-
       ReplaceText := aHTML.ToString;
   end else
   begin
