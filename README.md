@@ -1,6 +1,8 @@
 # FluentHTML
 
-Pascal'da HTML taglarını doğrudan kullanabilmek için geliştirilmiş bir kütüphanedir. HTML5 Tagları esas alınmıştır. 
+- Pascal'da HTML taglarını doğrudan kullanabilmek için geliştirilmiş bir kütüphanedir.
+- HTML5 Tagları esas alınmıştır. 
+- Sadece HTML5 Taglarını üretmek için kullanılabilir, Parse işlevi YOKTUR...
 
 ```pascal
 procedure TWebModule.PageProducer1HTMLTag( Sender          : TObject
