@@ -1,7 +1,14 @@
 # FluentHTML
 
+Pascal'da HTML taglarını doğrudan kullanabilmek için geliştirilmiş bir kütüphanedir. HTML5 Tagları esas alınmıştır. 
+
 ```pascal
-procedure TWebModule.PageProducer1HTMLTag(Sender: TObject; Tag: TTag; const TagString: string; TagParams: TStrings; var ReplaceText: string);
+procedure TWebModule.PageProducer1HTMLTag( Sender          : TObject
+                                         ; Tag             : TTag
+                                         ; const TagString : string
+                                         ; TagParams       : TStrings
+                                         ; var ReplaceText : string
+                                         );
 var
   aHTML: THTMLTag;
 begin
@@ -28,13 +35,13 @@ begin
   if  SameText(TagString, 'userprofileform') then begin
       aHTML:= form(
               [ fieldset('Kullanıcı Profilinizi Düzenleyin')
-              , label_( 'Kullanıcı Adı'   , [ br, input.placeholder('Lütfen bir kullanıcı adı belirtin').id('username_id').name('username').value('').type_('text').autocomplete('off') ])
+              , label_( 'Kullanıcı Adı'   , [ br, input.placeholder('Lütfen bir kullanıcı adı belirtin'     ).id('username_id').name('username').value('').type_('text').autocomplete('off') ])
               , br
-              , label_( 'Şifreniz'        , [ br, input.placeholder('Lütfen 8 basamaklı bir şifre yazınız').id('password_id').name('password').value('').type_('password').autocomplete('off') ])
+              , label_( 'Şifreniz'        , [ br, input.placeholder('Lütfen 8 basamaklı bir şifre yazınız'  ).id('password_id').name('password').value('').type_('password').autocomplete('off') ])
               , br
-              , label_( 'Ad ve Soyadınız' , [ br, input.placeholder('Lütfen tam adınızı yazınız').id('username_id').name('username').value('').type_('text').autocomplete('off') ])
+              , label_( 'Ad ve Soyadınız' , [ br, input.placeholder('Lütfen tam adınızı yazınız'            ).id('username_id').name('username').value('').type_('text').autocomplete('off') ])
               , br
-              , label_( 'Eposta Adresiniz', [ br, input.placeholder('Size ait Eposta adresinizi yazınız').id('username_id').name('username').value('').type_('text').autocomplete('off') ])
+              , label_( 'Eposta Adresiniz', [ br, input.placeholder('Size ait Eposta adresinizi yazınız'    ).id('username_id').name('username').value('').type_('text').autocomplete('off') ])
               , br
               , label_( 'Arabirim Dili'   , [ br, input.placeholder('Bu siteyi hangi dilde kullanacaksınız?').id('username_id').name('username').value('').type_('text').autocomplete('off') ])
               ]).action('/profileedit').method('post');
