@@ -5,6 +5,16 @@
 - Sadece HTML5 Taglarını üretmek için kullanılabilir, Parse işlevi YOKTUR...
 
 ```pascal
+
+uses
+    Classes_HTML5_            //  THTMLTag Class definition
+  , Methods_html5_            //  HTML Tags definitions...
+  ;
+
+...
+...
+...
+
 procedure TWebModule.PageProducer1HTMLTag( Sender          : TObject
                                          ; Tag             : TTag
                                          ; const TagString : string
