@@ -30,7 +30,6 @@ begin
                     ]).class_('vg');
 
       ReplaceText := aHTML.ToString;
-      FreeAndNil(aHTML);
   end else
   if  SameText(TagString, 'userprofileform') then begin
       aHTML:= form(
@@ -62,10 +61,10 @@ begin
                     ]).class_('vg');
 
       ReplaceText := aHTML.ToString;
-      FreeAndNil(aHTML);
   end else
   begin
     { Standart else sonu }
   end;
+  if Assigned(aHTML) then FreeAndNil(aHTML);
 end;
 ```
