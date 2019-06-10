@@ -1,5 +1,6 @@
 # FluentHTML
 
+```pascal
 procedure TWM.PageProducer1HTMLTag(Sender: TObject; Tag: TTag; const TagString: string; TagParams: TStrings; var ReplaceText: string);
 var
   aHTML: THTMLTag;
@@ -60,3 +61,4 @@ begin
     { Standart else sonu }
   end;
 end;
+```
