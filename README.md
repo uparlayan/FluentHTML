@@ -56,21 +56,6 @@ begin
               , br
               , label_( 'Arabirim Dili'   , [ br, input.placeholder('Bu siteyi hangi dilde kullanacaksınız?').id('language_id').name('language').value('').type_('text').autocomplete('off') ])
               ]).action('/profileedit').method('post');
-      aHTML:= table([
-                      thead([
-                              tr( [ th('Kullanıcı Profili').colspan('2')               ])
-                            , tr( [ th('Alan')          , th('Değer')                 ])
-                            ])
-                    , tbody([
-                              tr( [ td('ID')            , td(Oturum.User.ID.ToString) ])
-                            , tr( [ td('Kullanıcı Adı') , td(Oturum.User.UserName)    ])
-                            , tr( [ td('Şifre')         , td(Oturum.User.Password)    ])
-                            , tr( [ td('Ad Soyad')      , td(Oturum.User.AdSoyad)     ])
-                            , tr( [ td('Eposta')        , td(Oturum.User.Eposta)      ])
-                            , tr( [ td('Dil')           , td(Oturum.User.Dil)         ])
-                            , tr( [ td('Durum')         , td(Oturum.User.Durum)       ])
-                            ])
-                    ]).class_('vg');
       ReplaceText := aHTML.ToString;
   end else
   begin
