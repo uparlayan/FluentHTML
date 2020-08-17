@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2020.08.17 22:09:06.234,=P:\Dev\Delphi\ProjSYDNEY\Unit1.pas</Transaction>
+    <Transaction>2020.08.17 22:11:28.418,P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\Ana_.fmx=P:\Dev\Delphi\ProjSYDNEY\Unit1.fmx</Transaction>
+    <Transaction>2020.08.17 22:11:28.418,P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\Ana_.pas=P:\Dev\Delphi\ProjSYDNEY\Unit1.pas</Transaction>
+    <Transaction>2020.08.17 22:11:37.985,P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\FluentHTML_Demo.dproj=P:\Dev\Delphi\ProjSYDNEY\Project1.dproj</Transaction>
+    <Transaction>2020.08.17 22:12:44.170,=P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\Unit1.pas</Transaction>
+    <Transaction>2020.08.17 22:13:10.857,P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\HTML_Page_.pas=P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\Unit1.pas</Transaction>
+    <Transaction>2020.08.17 22:13:18.180,P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\HTML_Pages_.pas=P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\HTML_Page_.pas</Transaction>
+    <Transaction>2020.08.17 22:16:21.480,=P:\Dev\Delphi\ProjGIT\FluentHTML\src\Classes_HTML5_.pas</Transaction>
+    <Transaction>2020.08.17 22:16:21.523,=P:\Dev\Delphi\ProjGIT\FluentHTML\src\Methods_HTML5_.pas</Transaction>
+    <Transaction>2020.08.17 22:16:21.564,=P:\Dev\Delphi\ProjGIT\FluentHTML\src\Types_HTML5_.pas</Transaction>
+  </Transactions>
+  <ActiveMobileDevice>   <NoProfile iOSSimulator="iPhone5"/>
+  </ActiveMobileDevice>
+</BorlandProject>

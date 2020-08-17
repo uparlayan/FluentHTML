@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{DF820CDA-784A-4879-AAFA-949989FBE7D9}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="FluentWeb.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Demo\FluentHTML_Demo.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="FluentWeb">
+        <MSBuild Projects="FluentWeb.dproj"/>
+    </Target>
+    <Target Name="FluentWeb:Clean">
+        <MSBuild Projects="FluentWeb.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FluentWeb:Make">
+        <MSBuild Projects="FluentWeb.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FluentHTML_Demo">
+        <MSBuild Projects="Demo\FluentHTML_Demo.dproj"/>
+    </Target>
+    <Target Name="FluentHTML_Demo:Clean">
+        <MSBuild Projects="Demo\FluentHTML_Demo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FluentHTML_Demo:Make">
+        <MSBuild Projects="Demo\FluentHTML_Demo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="FluentWeb;FluentHTML_Demo"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="FluentWeb:Clean;FluentHTML_Demo:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="FluentWeb:Make;FluentHTML_Demo:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

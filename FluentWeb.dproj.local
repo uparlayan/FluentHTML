@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.444,P:\Dev\Delphi\ProjSYDNEY\Package1.dproj=P:\Dev\Delphi\ProjGIT\FluentHTML\FluentWeb.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.875,=P:\Dev\Delphi\ProjGIT\FluentHTML\src\Types_HTML5_.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.845,=P:\Dev\Delphi\ProjGIT\FluentHTML\src\Methods_HTML5_.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.810,=P:\Dev\Delphi\ProjGIT\FluentHTML\src\Classes_HTML5_.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.556,=rtl.dcp</Transaction>
+  </Transactions>
+</BorlandProject>
