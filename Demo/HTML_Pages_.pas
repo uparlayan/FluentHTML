@@ -19,60 +19,36 @@ function HomePage: string;
 var
   aHTML: THTMLTag;
 begin
-  aHTML :=  html( [ head(style('body {margin: 0px;padding: 0px;}'))
-                  , body([
-                            canvas('').id('myCanvas').width('578').height('200')
-                         ,  script( ' window.requestAnimFrame = (function(callback) {'
-                                  + '   return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||'
-                                  + '   function(callback) {'
-                                  + '     window.setTimeout(callback, 1000 / 60);'
-                                  + '   };'
-                                  + ' })();'
-                                  + ' function drawRectangle(myRectangle, context) {'
-                                  + '   context.beginPath();'
-                                  + '   context.rect(myRectangle.x, myRectangle.y, myRectangle.width, myRectangle.height);'
-                                  + '   context.fillStyle = ''#8ED6FF'';'
-                                  + '   context.fill();'
-                                  + '   context.lineWidth = myRectangle.borderWidth;'
-                                  + '   context.strokeStyle = ''black'';'
-                                  + '   context.stroke();'
-                                  + ' }'
-                                  + ' function animate(myRectangle, canvas, context, startTime) {'
-                                  + '   // update'
-                                  + '   var time = (new Date()).getTime() - startTime;'
-                                  + '   var amplitude = 150;'
-                                  + '   // in ms'
-                                  + '   var period = 2000;'
-                                  + '   var centerX = canvas.width / 2 - myRectangle.width / 2;'
-                                  + '   var nextX = amplitude * Math.sin(time * 2 * Math.PI / period) + centerX;'
-                                  + '   myRectangle.x = nextX;'
-                                  + '   // clear'
-                                  + '   context.clearRect(0, 0, canvas.width, canvas.height);'
-                                  + '   // draw'
-                                  + '   drawRectangle(myRectangle, context);'
-                                  + '   // request new frame'
-                                  + '   requestAnimFrame(function() {'
-                                  + '     animate(myRectangle, canvas, context, startTime);'
-                                  + '   });'
-                                  + ' }'
-                                  + ' var canvas = document.getElementById(''myCanvas'');'
-                                  + ' var context = canvas.getContext(''2d'');'
-                                  + ' var myRectangle = {'
-                                  + '   x: 250,'
-                                  + '   y: 70,'
-                                  + '   width: 100,'
-                                  + '   height: 50,'
-                                  + '   borderWidth: 5'
-                                  + ' };'
-                                  + ' drawRectangle(myRectangle, context);'
-                                  + ' // wait one second before starting animation'
-                                  + ' setTimeout(function() {'
-                                  + '   var startTime = (new Date()).getTime();'
-                                  + '   animate(myRectangle, canvas, context, startTime);'
-                                  + ' }, 1000);'
-                                  )
-                          ])
-                 ] );
+
+  aHTML := html([
+                  head([ meta.charset('UTF-8')
+                       , title('Basit HTML4 Haber Kağıdı')
+                       ])
+                , body([ h1('HTML4 Simple Newsletter template in Firefox 37 with JAWS 15')
+                       , p_('This video is a captioned demonstration of a simple newsletter written in HTML4. It is being displayed in Firefox 37 and accessed using JAWS 15.')
+                       , div_(
+                               video([ source().src('http://weba11y.com/Examples/HTML5A11y2015/demos/SimpleNewsletter1.mp4').type_('video/mp4')
+                                     , source().src('http://weba11y.com/Examples/HTML5A11y2015/demos/SimpleNewsletter1.webm').type_('video/webm')
+                                     , source().src('http://weba11y.com/Examples/HTML5A11y2015/demos/SimpleNewsletter1.ogv').type_('video/ogv')
+                                     ]).style('height:765px;width:915px;')
+                             ).style('margin-left:200px')
+                       ])
+               ]).lang('en')
+               ;
+{
+weba11y.com/Examples/HTML5A11y2015/demos/
+ <body>
+ <div style="margin-left:200px">
+ <video controls style="height:765px;width:915px;">
+  <source src="SimpleNewsletter1.mp4" type="video/mp4">
+  <source src="SimpleNewsletter1.webm" type="video/webm">
+  <source src="SimpleNewsletter1.ogv" type="video/ogg">
+  <track default label="English" kind="subtitles" srclang="en-US" id="englishTrack" src="simpleNewsletterHTML4.vtt">
+  Your browser does not support the video element
+</video>
+</div>
+</body>
+}
   Result := '<!DOCTYPE HTML>'#13#10 + aHTML.ToString;
   FreeAndNil(aHTML);
 end;
