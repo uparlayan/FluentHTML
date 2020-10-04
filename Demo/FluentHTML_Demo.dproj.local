@@ -1,17 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2020.08.17 22:09:06.234,=P:\Dev\Delphi\ProjSYDNEY\Unit1.pas</Transaction>
-    <Transaction>2020.08.17 22:11:28.418,P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\Ana_.fmx=P:\Dev\Delphi\ProjSYDNEY\Unit1.fmx</Transaction>
-    <Transaction>2020.08.17 22:11:28.418,P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\Ana_.pas=P:\Dev\Delphi\ProjSYDNEY\Unit1.pas</Transaction>
-    <Transaction>2020.08.17 22:11:37.985,P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\FluentHTML_Demo.dproj=P:\Dev\Delphi\ProjSYDNEY\Project1.dproj</Transaction>
-    <Transaction>2020.08.17 22:12:44.170,=P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\Unit1.pas</Transaction>
-    <Transaction>2020.08.17 22:13:10.857,P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\HTML_Page_.pas=P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\Unit1.pas</Transaction>
-    <Transaction>2020.08.17 22:13:18.180,P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\HTML_Pages_.pas=P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\HTML_Page_.pas</Transaction>
-    <Transaction>2020.08.17 22:16:21.480,=P:\Dev\Delphi\ProjGIT\FluentHTML\src\Classes_HTML5_.pas</Transaction>
-    <Transaction>2020.08.17 22:16:21.523,=P:\Dev\Delphi\ProjGIT\FluentHTML\src\Methods_HTML5_.pas</Transaction>
-    <Transaction>2020.08.17 22:16:21.564,=P:\Dev\Delphi\ProjGIT\FluentHTML\src\Types_HTML5_.pas</Transaction>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.480,=P:\Dev\Delphi\ProjGIT\FluentHTML\src\Classes_HTML5_.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.564,=P:\Dev\Delphi\ProjGIT\FluentHTML\src\Types_HTML5_.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.170,=P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.857,P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\Unit1.pas=P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\HTML_Page_.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.418,P:\Dev\Delphi\ProjSYDNEY\Unit1.fmx=P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\Ana_.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.180,P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\HTML_Page_.pas=P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\HTML_Pages_.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.523,=P:\Dev\Delphi\ProjGIT\FluentHTML\src\Methods_HTML5_.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.234,=P:\Dev\Delphi\ProjSYDNEY\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.418,P:\Dev\Delphi\ProjSYDNEY\Unit1.pas=P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\Ana_.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.985,P:\Dev\Delphi\ProjSYDNEY\Project1.dproj=P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\FluentHTML_Demo.dproj</Transaction>
   </Transactions>
-  <ActiveMobileDevice>   <NoProfile iOSSimulator="iPhone5"/>
-  </ActiveMobileDevice>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
 </BorlandProject>
