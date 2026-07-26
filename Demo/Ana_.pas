@@ -3,20 +3,35 @@ unit Ana_;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.WebBrowser,
-  FMX.StdCtrls, FMX.Controls.Presentation;
+    Winapi.Windows
+  , Winapi.ActiveX
+  , System.SysUtils
+  , System.Classes
+  , System.IOUtils
+  , Vcl.Controls
+  , Vcl.Forms
+  , Vcl.Dialogs
+  , Vcl.StdCtrls
+  , Vcl.ExtCtrls
+  , Vcl.Edge
+  , Winapi.WebView2
+  , FluentHTML.Edge
+  ;
 
 type
   TForm1 = class(TForm)
     pnl_Toolbar: TPanel;
     bt_Test: TButton;
-    WB: TWebBrowser;
-    procedure KlikManager(Sender: TObject);
+    EdgeWB: TEdgeBrowser;
+    procedure FormCreate(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure bt_TestClick(Sender: TObject);
+    procedure EdgeWBCreateWebViewCompleted(Sender: TCustomEdgeBrowser; AResult: HRESULT);
   private
-    { Private declarations }
+    FCikisYolu: string;
+    procedure UpdateDemoDashboard;
+    procedure EnsureWebViewLoaderDLL;
   public
-    { Public declarations }
   end;
 
 var
@@ -25,26 +40,75 @@ var
 implementation
 
 uses
-  HTML_Pages_;
+    HTML_Pages_
+  ;
 
-{$R *.fmx}
+{$R *.dfm}
 
-procedure TForm1.KlikManager(Sender: TObject);
+procedure TForm1.EnsureWebViewLoaderDLL;
+var
+  LExeDir, LDllTarget, LFallbackDll: string;
 begin
-  if (Sender = bt_Test) then begin
-      WB.LoadFromStrings(HomePage, '');
-  end else
-  if (Sender = nil) then begin
-  end else
-  if (Sender = nil) then begin
-  end else
-  if (Sender = nil) then begin
-  end else
-  if (Sender = nil) then begin
-  end else
+  LExeDir := ExtractFilePath(ParamStr(0));
+  LDllTarget := TPath.Combine(LExeDir, 'WebView2Loader.dll');
+  if not TFile.Exists(LDllTarget) then
   begin
-    { Standart else sonu }
+    LFallbackDll := TPath.Combine(TPath.Combine(LExeDir, 'Exe'), 'WebView2Loader.dll');
+    if TFile.Exists(LFallbackDll) then
+    begin
+      try
+        TFile.Copy(LFallbackDll, LDllTarget, True);
+      except
+      end;
+    end;
   end;
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+var
+  LUserDataDir: string;
+begin
+  EnsureWebViewLoaderDLL;
+
+  FCikisYolu := TPath.Combine(ExtractFilePath(ParamStr(0)), 'index.html');
+
+  // Set writable Local AppData UserDataFolder for WebView2
+  LUserDataDir := TPath.Combine(TPath.GetCachePath, 'FluentHTML_WebView2');
+  try
+    ForceDirectories(LUserDataDir);
+  except
+  end;
+  EdgeWB.UserDataFolder := LUserDataDir;
+
+  EdgeWB.OnCreateWebViewCompleted := EdgeWBCreateWebViewCompleted;
+end;
+
+procedure TForm1.FormShow(Sender: TObject);
+begin
+  UpdateDemoDashboard;
+end;
+
+procedure TForm1.EdgeWBCreateWebViewCompleted(Sender: TCustomEdgeBrowser; AResult: HRESULT);
+begin
+  if Succeeded(AResult) then
+  begin
+    UpdateDemoDashboard;
+  end;
+end;
+
+procedure TForm1.bt_TestClick(Sender: TObject);
+begin
+  UpdateDemoDashboard;
+end;
+
+procedure TForm1.UpdateDemoDashboard;
+begin
+  TFile.WriteAllText(FCikisYolu, HomePage, TEncoding.UTF8);
+
+  if EdgeWB.WebViewCreated then
+    EdgeWB.NavigateLocalFile(FCikisYolu)
+  else
+    EdgeWB.CreateWebView;
 end;
 
 end.

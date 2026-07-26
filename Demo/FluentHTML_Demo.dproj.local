@@ -1,18 +1,90 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.480,=P:\Dev\Delphi\ProjGIT\FluentHTML\src\Classes_HTML5_.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.564,=P:\Dev\Delphi\ProjGIT\FluentHTML\src\Types_HTML5_.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.170,=P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.857,P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\Unit1.pas=P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\HTML_Page_.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.418,P:\Dev\Delphi\ProjSYDNEY\Unit1.fmx=P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\Ana_.fmx</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.180,P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\HTML_Page_.pas=P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\HTML_Pages_.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.523,=P:\Dev\Delphi\ProjGIT\FluentHTML\src\Methods_HTML5_.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.234,=P:\Dev\Delphi\ProjSYDNEY\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.026,=F:\Dev\Delphi\LibGenel\FluentHTML\src\FluentHTML.Component.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.087,=F:\Dev\Delphi\LibGenel\FluentHTML\src\FluentHTML.Edge.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.418,P:\Dev\Delphi\ProjSYDNEY\Unit1.pas=P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\Ana_.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.719,=F:\Dev\Delphi\LibGenel\FluentHTML\src\FluentHTML.Component.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.418,P:\Dev\Delphi\ProjSYDNEY\Unit1.fmx=P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\Ana_.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.857,P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\Unit1.pas=P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\HTML_Page_.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.170,=P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.234,=P:\Dev\Delphi\ProjSYDNEY\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.770,=F:\Dev\Delphi\LibGenel\FluentHTML\src\FluentHTML.DataSet.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.523,=P:\Dev\Delphi\ProjGIT\FluentHTML\src\Methods_HTML5_.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.180,P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\HTML_Page_.pas=P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\HTML_Pages_.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.064,=F:\Dev\Delphi\LibGenel\FluentHTML\src\FluentHTML.DataSet.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.564,=P:\Dev\Delphi\ProjGIT\FluentHTML\src\Types_HTML5_.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.480,=P:\Dev\Delphi\ProjGIT\FluentHTML\src\Classes_HTML5_.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.985,P:\Dev\Delphi\ProjSYDNEY\Project1.dproj=P:\Dev\Delphi\ProjGIT\FluentHTML\Demo\FluentHTML_Demo.dproj</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
 		<NoProfile iOSSimulator="iPhone5"/>
 	</ActiveMobileDevice>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="android-support-v4.dex.jar"/>
+    <File Path="cloud-messaging.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-ads-base.17.2.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-ads-identifier.16.0.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-ads-lite.17.2.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-ads.17.2.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-analytics-impl.16.0.8.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-analytics.16.0.8.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-base.16.0.1.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-basement.16.2.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-gass.17.2.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-identity.16.0.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-maps.16.1.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-measurement-base.16.4.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-measurement-sdk-api.16.4.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-stats.16.0.1.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-tagmanager-v4-impl.16.0.8.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-tasks.16.0.1.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-wallet.16.0.1.dex.jar"/>
+    <File Path="com-google-firebase.firebase-analytics.16.4.0.dex.jar"/>
+    <File Path="com-google-firebase.firebase-common.16.1.0.dex.jar"/>
+    <File Path="com-google-firebase.firebase-iid-interop.16.0.1.dex.jar"/>
+    <File Path="com-google-firebase.firebase-iid.17.1.1.dex.jar"/>
+    <File Path="com-google-firebase.firebase-measurement-connector.17.0.1.dex.jar"/>
+    <File Path="com-google-firebase.firebase-messaging.17.5.0.dex.jar"/>
+    <File Path="fmx.dex.jar"/>
+    <File Path="google-play-billing.dex.jar"/>
+    <File Path="google-play-licensing.dex.jar"/>
+    <File Path="android-support-v4.dex.jar"/>
+    <File Path="cloud-messaging.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-ads-base.17.2.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-ads-identifier.16.0.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-ads-lite.17.2.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-ads.17.2.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-analytics-impl.16.0.8.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-analytics.16.0.8.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-base.16.0.1.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-basement.16.2.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-gass.17.2.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-identity.16.0.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-maps.16.1.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-measurement-base.16.4.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-measurement-sdk-api.16.4.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-stats.16.0.1.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-tagmanager-v4-impl.16.0.8.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-tasks.16.0.1.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-wallet.16.0.1.dex.jar"/>
+    <File Path="com-google-firebase.firebase-analytics.16.4.0.dex.jar"/>
+    <File Path="com-google-firebase.firebase-common.16.1.0.dex.jar"/>
+    <File Path="com-google-firebase.firebase-iid-interop.16.0.1.dex.jar"/>
+    <File Path="com-google-firebase.firebase-iid.17.1.1.dex.jar"/>
+    <File Path="com-google-firebase.firebase-measurement-connector.17.0.1.dex.jar"/>
+    <File Path="com-google-firebase.firebase-messaging.17.5.0.dex.jar"/>
+    <File Path="fmx.dex.jar"/>
+    <File Path="google-play-billing.dex.jar"/>
+    <File Path="google-play-licensing.dex.jar"/>
+    <File Path="..\..\FluentHTML"/>
+    <File Path="..\src"/>
+    <File Path="..\src\FluentHTML.Component.pas"/>
+    <File Path="..\src\FluentHTML.DataSet.pas"/>
+    <File Path="..\src\FluentHTML.pas"/>
+    <File Path="..\src\FluentHTML.Edge.pas"/>
+    <File Path="Ana_.pas"/>
+    <File Path="Ana_.dfm"/>
+    <File Path="HTML_Pages_.pas"/>
+  </ProjectSortOrder>
 </BorlandProject>

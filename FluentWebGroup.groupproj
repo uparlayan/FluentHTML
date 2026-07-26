@@ -9,6 +9,9 @@
         <Projects Include="Demo\FluentHTML_Demo.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="test\TestFluentHTML.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -35,14 +38,23 @@
     <Target Name="FluentHTML_Demo:Make">
         <MSBuild Projects="Demo\FluentHTML_Demo.dproj" Targets="Make"/>
     </Target>
+    <Target Name="TestFluentHTML">
+        <MSBuild Projects="test\TestFluentHTML.dproj"/>
+    </Target>
+    <Target Name="TestFluentHTML:Clean">
+        <MSBuild Projects="test\TestFluentHTML.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestFluentHTML:Make">
+        <MSBuild Projects="test\TestFluentHTML.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="FluentWeb;FluentHTML_Demo"/>
+        <CallTarget Targets="FluentWeb;FluentHTML_Demo;TestFluentHTML"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="FluentWeb:Clean;FluentHTML_Demo:Clean"/>
+        <CallTarget Targets="FluentWeb:Clean;FluentHTML_Demo:Clean;TestFluentHTML:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="FluentWeb:Make;FluentHTML_Demo:Make"/>
+        <CallTarget Targets="FluentWeb:Make;FluentHTML_Demo:Make;TestFluentHTML:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

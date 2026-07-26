@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="tr"><head><meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>FluentHTML - Modern HTML5 Vitrin & Gösterim</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>  * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Outfit", -apple-system, sans-serif; }
+  body { background-color: #0f172a; color: #f8fafc; line-height: 1.6; padding-bottom: 50px; }
+  header { background: rgba(30, 41, 59, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid #334155; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+  .logo { font-size: 1.5rem; font-weight: 700; background: linear-gradient(135deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  nav a { color: #94a3b8; text-decoration: none; margin-left: 1.5rem; font-weight: 500; transition: color 0.2s; }
+  nav a:hover { color: #38bdf8; }
+  .container { max-width: 1100px; margin: 2rem auto; padding: 0 1.5rem; }
+  .hero { background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%); border-radius: 16px; padding: 3rem 2rem; text-align: center; margin-bottom: 2.5rem; box-shadow: 0 10px 25px -5px rgba(67, 56, 202, 0.3); border: 1px solid rgba(129, 140, 248, 0.2); }
+  .hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; color: #ffffff; }
+  .hero p { font-size: 1.1rem; color: #c7d2fe; max-width: 700px; margin: 0 auto 1.5rem auto; }
+  .search-box { display: flex; justify-content: center; gap: 0.5rem; max-width: 500px; margin: 0 auto; }
+  .search-box input { flex: 1; padding: 0.75rem 1rem; border-radius: 8px; border: 1px solid #4338ca; background: #0f172a; color: #fff; font-size: 1rem; outline: none; }
+  .search-box button { padding: 0.75rem 1.5rem; border-radius: 8px; border: none; background: #6366f1; color: #fff; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+  .search-box button:hover { background: #4f46e5; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem; }
+  .card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 1.5rem; transition: transform 0.2s, border-color 0.2s; }
+  .card:hover { transform: translateY(-4px); border-color: #6366f1; }
+  .card h3 { color: #38bdf8; margin-bottom: 0.5rem; font-size: 1.25rem; }
+  .card p { color: #94a3b8; font-size: 0.95rem; }
+  .badge { display: inline-block; padding: 0.25rem 0.6rem; border-radius: 9999px; background: rgba(56, 189, 248, 0.1); color: #38bdf8; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.75rem; }
+  .table-section { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 1.5rem; margin-bottom: 2.5rem; overflow-x: auto; }
+  .table-section h2 { color: #f8fafc; margin-bottom: 1rem; font-size: 1.5rem; }
+  table { width: 100%; border-collapse: collapse; text-align: left; }
+  th { background: #0f172a; color: #cbd5e1; padding: 0.75rem 1rem; font-weight: 600; border-bottom: 2px solid #334155; }
+  td { padding: 0.75rem 1rem; border-bottom: 1px solid #334155; color: #94a3b8; }
+  tr:hover td { background: rgba(51, 65, 85, 0.5); color: #f8fafc; }
+  footer { text-align: center; color: #64748b; font-size: 0.9rem; margin-top: 3rem; }</style>
+</head>
+<body><header><div class="logo">FluentHTML</div>
+<nav><a href="#">Ana Sayfa</a>
+<a href="#features">Özellikler</a>
+<a href="#data">Veri Tablosu</a>
+<a href="#docs">Dokümantasyon</a>
+</nav>
+</header>
+<main class="container"><section class="hero"><h1>Delphi ile Akıcı HTML5 Nesne Mimarisi</h1>
+<p>FluentHTML, Delphi geliştiricilerine saf HTML5 standartlarında, tip güvenli ve performanslı web içerik üretimi sağlar.</p>
+<search><div class="search-box"><input id="search_input" placeholder="HTML5 etiket veya öznitelik arayın..." type="search">
+<button type="button">Keşfet</button>
+</div>
+</search>
+</section>
+<section class="grid" id="features"><article class="card"><div class="badge">SAF STANDART</div>
+<h3>HTML5 Standart Uyumu</h3>
+<p>Hiçbir 3. parti bağımlılık olmadan saf HTML5 etiketlerini ve HTML5.3 <search> bileşenini destekler.</p>
+</article>
+<article class="card"><div class="badge">PERFORMANS</div>
+<h3>Fluent Chaining</h3>
+<p>Metod zincirleme (fluent chaining) yapısı ile okunabilir ve esnek kod yazımını mümkün kılar.</p>
+</article>
+<article class="card"><div class="badge">DELPHI IDE</div>
+<h3>IDE & TDataSet Desteği</h3>
+<p>Delphi IDE Araç Paleti temsilci bileşeni ve TDataSet HTML tablo dönüştürücü desteği sunar.</p>
+</article>
+</section>
+<section class="table-section" id="data"><h2>Örnek HTML5 Veri Tablosu</h2>
+<table><thead><tr><th>No</th>
+<th>Bileşen / Etiket</th>
+<th>Tür</th>
+<th>Durum</th>
+</tr>
+</thead>
+<tbody><tr><td>1</td>
+<td>a_(aHref, aText)</td>
+<td>Saf Overload</td>
+<td>Aktif</td>
+</tr>
+<tr><td>2</td>
+<td>img(aSrc, aAlt)</td>
+<td>Saf Overload</td>
+<td>Aktif</td>
+</tr>
+<tr><td>3</td>
+<td>search(...)</td>
+<td>HTML5.3 Tag</td>
+<td>Aktif</td>
+</tr>
+<tr><td>4</td>
+<td>DataSetToHTMLTable</td>
+<td>TDataSet Helper</td>
+<td>Aktif</td>
+</tr>
+<tr><td>5</td>
+<td>TFluentHTMLComponent</td>
+<td>IDE Component</td>
+<td>Aktif</td>
+</tr>
+</tbody>
+</table>
+</section>
+</main>
+<footer><p>© 2026 FluentHTML Library - Uğur PARLAYAN | Delphi HTML5 Web Framework Engine</p>
+</footer>
+</body>
+</html>

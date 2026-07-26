@@ -33,7 +33,7 @@ type
 
 implementation
 
-{ THTMLAttributes_Helper }
+{ THTMLItems_Helper }
 
 function THTMLItems_Helper.Count: Integer;
 begin

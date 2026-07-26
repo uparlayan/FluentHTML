@@ -28,11 +28,14 @@ package FluentWeb;
 {$IMPLICITBUILD ON}
 
 requires
-  rtl;
+  rtl,
+  dbrtl,
+  vclEdge;
 
 contains
-  Classes_HTML5_ in 'src\Classes_HTML5_.pas',
-  Methods_HTML5_ in 'src\Methods_HTML5_.pas',
-  Types_HTML5_ in 'src\Types_HTML5_.pas';
+  FluentHTML in 'src\FluentHTML.pas',
+  FluentHTML.DataSet in 'src\FluentHTML.DataSet.pas',
+  FluentHTML.Component in 'src\FluentHTML.Component.pas',
+  FluentHTML.Edge in 'src\FluentHTML.Edge.pas';
 
 end.

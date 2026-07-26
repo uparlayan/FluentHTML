@@ -1,0 +1,13 @@
+# Delphi Temporary and History Folders
+__history/
+__recovery/
+
+# Delphi IDE Local State and Cache Files
+*.local
+*.identcache
+
+# Compiled Output Folders
+Compiled/
+*.dcu
+*.exe
+/USER-PROFILE-TR.MD
